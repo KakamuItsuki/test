@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="websitePC.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img class="logo" src="/Users/kakamuitsuki/HTML/WEBsitePC/assets/css/img/logo-white.png" alt="">
+        </div>
+        <div class="header-right">
+            <ul class="nav">
+                <li><a href="#programming">Programming</a></li>
+                <!-- 同じサイト内に飛ぶ時idで名前つけたやつと同じもの -->
+                <li><a href="#english">English</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- welcome -->
+        <section class="welcome">
+            <h1 class="title">Welcome To NexSeed</h1>
+            <ul class="guideline">
+                <li>Be Athelete</li>
+                <li>Go World</li>
+                <li>Enjoy Everything</li>
+            </ul>
+        </section>
+
+        <!-- programming -->
+        <section id="programming">
+            <h2>Programming</h2>
+            <div class="contents">
+                <p> class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero animi totam blanditiis nemo molestias aspernatur ullam officiis, porro aliquid omnis ex voluptatem architecto vero laudantium sit impedit ratione quam quos?
+                </p>
+                <img src="/Users/kakamuitsuki/HTML/WEBsitePC/assets/css/img/programming.jpg" alt="">
+            </div>
+        </section>
+         
+        <!-- english -->
+        <section id="english">
+            <h2>English</h2>
+            <div class="contents">
+                <img src="/Users/kakamuitsuki/HTML/WEBsitePC/assets/css/img/programming.jpg" alt="">
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Pariatur, minus fuga? Exercitationem autem cupiditate at eum perferendis 
+                    veniam molestias labore dolor quam incidunt, sequi amet numquam temporibus
+                     enim, hic in.
+                </p>
+                
+            </div>
+        </section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Seedkun Inc.
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
