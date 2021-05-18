@@ -1,0 +1,123 @@
+*{
+    /* *は画面全体のこと。余白をなしにする。 */
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    /* ↑2つの要素を水平方向に端と端におきたい時 */
+
+
+align-items: center;
+background-color: rgb(6,39,66);
+padding: 14px 40px;
+
+}
+
+.logo{
+height: 36px;
+}
+
+.nav{
+display: flex;
+
+}
+
+.nav > li > a {
+color: white;
+font-size:20px;
+margin-left: 20px;
+text-decoration: none;
+}
+
+.welcome{
+    background-image: url(/Users/kakamuitsuki/HTML/WEBsitePC/assets/css/img/background.jpg);
+    background-size: cover;
+    /* ↑全面を指定 */
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* デバイスサイズに対して100％だから様々なデバイスに合わせられる */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* 縦並び */
+    color: white;
+}
+
+/* ↓スマホ対応 */
+.title{
+    font-size: 30px;
+    text-align: center;
+    /* 文字を中央寄せ */
+}
+
+.guideline{
+    font-size: 15px;
+    font-weight: bold;
+    /* ↑文字の太さを指定。boldは一般的な太さ */
+    text-align: center;
+}
+
+.guideline > li {
+    margin-top: 20px;
+}
+/* ↓PCに対応 */
+@media screen and (min-width:780px){
+
+
+.title{
+    font-size: 80px;
+    text-align: center;
+    /* 文字を中央寄せ */
+}
+
+.guideline{
+    font-size: 40px;
+    font-weight: bold;
+    /* ↑文字の太さを指定。boldは一般的な太さ */
+    text-align: center;
+}
+
+.guideline > li {
+    margin-top: 14px;
+}
+}
+#programming, #english{
+    /* 同じようにしたい時,で区切る */
+    width: 100%;
+}
+
+#programming > h2,#english > h2{
+    font-size: 40px;
+    color: gray;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.description{
+    width: 50%;
+}
+
+.contents > img{
+    height: 150px;
+    margin: 0 20px;
+}
+
+footer{
+    background-color: rgb(6,39,66);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 100px;
+    padding: 20px 0;
+}
